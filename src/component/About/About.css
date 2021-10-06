@@ -1,0 +1,17 @@
+.about{
+    width: 100%;
+}
+.about-img{
+    width: 100%;
+}
+.about-header{
+    color: brown;
+    font-weight: bold;
+}
+.about-text{
+    color: chocolate;
+    line-height: 200%;
+}
+.p-clr{
+    color: rgb(104, 66, 40);
+}

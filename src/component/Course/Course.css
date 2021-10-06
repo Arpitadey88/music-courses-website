@@ -1,0 +1,14 @@
+.course-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.singer-image{
+    height: 300px;
+    width: auto;
+}
+.course-style{
+    margin: 20px;
+}
+.card{
+    padding: 10px;
+}

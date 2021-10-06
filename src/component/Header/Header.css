@@ -1,0 +1,27 @@
+.header{
+    margin-left: 47px;
+    margin-right: 50px;
+    background-color: rgb(226, 210, 190);
+}
+/* .bg-clr{
+    background-color: rgb(226, 210, 190);
+} */
+.icon{
+    font-size: 28px;
+    font-weight: bold;
+    color: brown;
+}
+.nav-items{
+    color: chocolate;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.list-name{
+    text-decoration: none;
+}
+.list-name :hover{
+    color: red;
+}
+.search-field{
+    margin-left: 160px;
+}
