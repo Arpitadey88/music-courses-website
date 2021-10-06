@@ -1,4 +1,4 @@
-# [International online Music Course] (https://educational-website-arpitadey88.netlify.app)
+# [International online Music Course] (https://educational-website-arpitadey.netlify.app/)
 # This is created by react app
 ## feature
 * Tried to introduced our Online Platform to others.
