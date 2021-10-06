@@ -18,9 +18,11 @@ const Home = () => {
                 </div>
                 <div className="col-md-6 ">
                     <h1 style={{ color: 'chocolate' }}>MusicSoul College Of Music</h1>
-                    <h2 style={{ color: 'brown' }}>At the world’s preeminent college for <br /> the study of music, students can <br /> experience all aspects of the music br
-                        industry through an interdisciplinary curriculum.</h2>
-                    <h6 className="text-secondary">SHORTCUTS</h6>
+                    <br />
+                    <h3 style={{ color: 'brown' }}>At the world’s preeminent college for the <br /> study of music, students can experience <br /> all aspects of the music industry through <br />
+                        an interdisciplinary curriculum.</h3>
+                    <br />
+                    <h5 className="text-secondary">SHORTCUTS</h5>
                     <Link className="text-danger">Financial aid and scholarships</Link>
                     <br />
                     <Link className="text-danger">Auditions</Link>
