@@ -14,10 +14,11 @@
 .nav-items{
     color: chocolate;
     font-weight: bold;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 .list-name{
     text-decoration: none;
+    padding-left: 15px;
 }
 .list-name :hover{
     color: red;

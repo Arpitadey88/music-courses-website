@@ -7,7 +7,7 @@ import Footer from './component/Footer/Footer';
 import Community from './component/Community/Community';
 import NotFound from './component/NotFounnd/NotFound';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './component/Services/Services';
+import Service from './component/Service/Service';
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
             <About></About>
           </Route>
           <Route path="/services">
-            <Services></Services>
+            <Service></Service>
           </Route>
           <Route path="/community">
             <Community></Community>

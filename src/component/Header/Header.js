@@ -10,7 +10,7 @@ const Header = () => {
                 <Navbar>
                     <div className="col-md-2">
                         <Navbar><i className="fas fa-guitar icon ms-2"></i>
-                            <h4 className="nav-items ms-3"><span><i>MusicSoul</i></span></h4>
+                            <h4 className="nav-items"><span><i>MusicSoul</i></span></h4>
                         </Navbar>
                     </div>
                     <div className=" d-flex col-md-10 ms-2">
@@ -20,7 +20,7 @@ const Header = () => {
 
                                 <NavLink className="list-name" to="/about"><h5 className="nav-items">About</h5></NavLink>
 
-                                <NavLink className="list-name" to="/services"><h5 className="nav-items">Services</h5></NavLink>
+                                <NavLink className="list-name" to="/services"><h5 className="nav-items">Service</h5></NavLink>
 
                                 <NavLink className="list-name" to="/community"><h5 className="nav-items">Community</h5></NavLink>
                             </Nav>
