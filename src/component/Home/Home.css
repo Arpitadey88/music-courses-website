@@ -1,0 +1,20 @@
+.banner-img{
+    height: 600px;
+}
+.banner-header{
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+}
+.banner-text{
+    text-align: center;
+    color: rgb(104, 66, 40);
+    line-height: 200%;
+}
+.banner-btn{
+    text-align: center;
+}
+.card-bg{
+    background-color: rgb(226, 210, 190);
+    border-radius: 10px;
+}

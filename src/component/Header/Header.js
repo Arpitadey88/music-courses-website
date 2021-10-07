@@ -6,10 +6,10 @@ import './Header.css';
 const Header = () => {
     return (
         <div className="header">
-            <div className="row">
+            <div className="row  mx-5">
                 <Navbar>
                     <div className="col-md-2">
-                        <Navbar><i className="fas fa-guitar icon ms-2"></i>
+                        <Navbar><i className="fas fa-guitar icon"></i>
                             <h4 className="nav-items"><span><i>MusicSoul</i></span></h4>
                         </Navbar>
                     </div>

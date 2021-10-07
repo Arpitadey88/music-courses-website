@@ -1,13 +1,33 @@
 import React from 'react';
-import image from '../../img/music.jpg';
+import { Link } from 'react-router-dom';
+import image from '../../img/kidsmusic.jpg';
+import imageN from '../../img/music.jpg';
+
 
 const Community = () => {
     return (
         <div className="mx-5 my-3">
-            <h5 className="py-2">A PREMIER EDUCATION. A COMMUNITY THAT CARES.</h5>
             <div className="row">
                 <div className="col-md-6">
                     <img className="img-fluid" src={image} alt="" />
+                </div>
+                <div className="col-md-6 ">
+                    <h1 style={{ color: 'chocolate' }}>MusicSoul College Of Music</h1>
+                    <br />
+                    <h3 style={{ color: 'brown' }}>At the world’s preeminent college for the <br /> study of music, students can experience <br /> all aspects of the music industry through <br />
+                        an interdisciplinary curriculum.</h3>
+                    <br />
+                    <h5 className="text-secondary">SHORTCUTS</h5>
+                    <Link className="text-danger">Financial aid and scholarships</Link>
+                    <br />
+                    <Link className="text-danger">Auditions</Link>
+                </div>
+            </div>
+
+            <h3 className="pt-5" style={{ color: 'crimson' }}>A PREMIER EDUCATION. A COMMUNITY THAT CARES.</h3>
+            <div className="row">
+                <div className="col-md-6">
+                    <img className="img-fluid" src={imageN} alt="" />
                 </div>
                 <div className="col-md-6">
                     <h6>A MusicSoul EDUCATION</h6>

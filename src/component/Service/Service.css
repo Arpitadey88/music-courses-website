@@ -1,16 +1,19 @@
-.banner-img{
-    height: 600px;
+.service-banner{
+    background-color:wheat;
+    /* padding: 40px 10px; */
+    border-radius: 5px;
 }
-.banner-header{
-    text-align: center;
-    color: brown;
-    font-weight: bold;
+.course-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
-.banner-text{
-    text-align: center;
-    color: rgb(104, 66, 40);
-    line-height: 200%;
+.singer-image{
+    height: 300px;
+    width: auto;
 }
-.banner-btn{
-    text-align: center;
+.course-style{
+    margin: 20px;
+}
+.card{
+    padding: 10px;
 }

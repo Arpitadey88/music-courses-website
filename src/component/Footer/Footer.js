@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className="bg-black text-white mx-5 my-3 p-3">
+        <div className="bg-black text-white my-3 p-3">
             <div className="text-center">
                 <h4>online.MusicSoul.edu</h4>
                 <h4>1-866-MusicSoul | admissions@online.MusicSoul.edu</h4>

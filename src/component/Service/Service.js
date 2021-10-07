@@ -1,36 +1,46 @@
-import React from 'react';
-import { Button, Card } from 'react-bootstrap';
-import image from '../../img/kidsmusic.jpg';
-import './Service.css'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import image from '../../img/group.jpg';
+import Course from '../Course/Course';
+import './Service.css';
 
 const Service = () => {
+    const [courses, setCourses] = useState([]);
+    useEffect(() => {
+        fetch('./programms.JSON')
+            .then(res => res.json())
+            .then(data => setCourses(data));
+    }, [])
     return (
-        <div className="mx-5 my-5">
-            {/* <h3>This is home</h3> */}
-            <Card>
-                <Card.Img className="banner-img" src={image} alt="Card image" />
-                <Card.ImgOverlay>
-                    <h2 className="banner-header">Inspiring Music Education For Over 20 Years</h2>
-                    <h5 className="banner-text">
-                        A world-leading music teaching and learning platform used in 62 countries
-                        A vast library of resources, songs, instrumental courses and creative apps
-                        Quality-assured training, support for blended and home learning, assessment,
-                        special needs education, and more
-                        Start Free Trial.
-                    </h5>
-                </Card.ImgOverlay>
+        <div className="my-5">
+            <div className="row mx-4 service-banner px-1 py-4">
+                <div className="col-md-6">
+                    <img className="img-fluid" src={image} alt="" />
+                </div>
+                <div className="col-md-6 ps-3">
+                    <h1 style={{ color: 'chocolate' }}>MusicSoul College Of Music</h1>
+                    <br />
+                    <h3 style={{ color: 'brown' }}>At the world’s preeminent college for the <br /> study of music, students can experience <br /> all aspects of the music industry through <br />
+                        an interdisciplinary curriculum.</h3>
+                    <br />
+                    <h5 className="text-secondary">SHORTCUTS</h5>
+                    <Link className="text-danger">Financial aid and scholarships</Link>
+                    <br />
+                    <Link className="text-danger">Auditions</Link>
+                </div>
+            </div>
 
-                <Card>
-                    <h2 style={{ color: 'brown' }}>Featured</h2>
-                    <Card.Body style={{ backgroundColor: 'khaki', color: 'chocolate' }}>
-                        <h4>*Committed to student success, affordability, and career preparation.</h4>
-                        <h4>*Offers Student services and support</h4>
-                        <h4>*Supports Financial aid and scholarships</h4>
-                        <h4>*A Complete College-Level Music Theory Curriculum.</h4>
-                        <Button variant="outline-danger" className="border border-success my-3">START FREE TRIAL</Button>
-                    </Card.Body>
-                </Card>
-            </Card>
+            <div className="my-4 service-banner mx-4">
+                <h1 className=" ms-1" style={{ color: "brown" }}>Our Offered Courses</h1>
+                <div className="course-container px-2">
+                    {
+                        courses.map(course => <Course
+                            key={course.id}
+                            course={course}>
+                        </Course>)
+                    }
+                </div>
+            </div>
         </div>
     );
 };
